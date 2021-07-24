@@ -29,22 +29,25 @@ namespace Q_cursos
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Principal));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.cadastrosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.funcionáriosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.cursosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.rtsAutor = new System.Windows.Forms.ToolStripMenuItem();
+            this.TelaEditora = new System.Windows.Forms.ToolStripMenuItem();
             this.professoresToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.consultasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.funcionáriosToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.cursosToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.funcionáriosToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.sobreToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.sistemaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.sairToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
-            this.sistemaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.menuStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -64,27 +67,32 @@ namespace Q_cursos
             // cadastrosToolStripMenuItem
             // 
             this.cadastrosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.funcionáriosToolStripMenuItem,
-            this.cursosToolStripMenuItem,
+            this.rtsAutor,
+            this.TelaEditora,
             this.professoresToolStripMenuItem});
             this.cadastrosToolStripMenuItem.Name = "cadastrosToolStripMenuItem";
             this.cadastrosToolStripMenuItem.Size = new System.Drawing.Size(71, 20);
             this.cadastrosToolStripMenuItem.Text = "Cadastros";
             // 
-            // funcionáriosToolStripMenuItem
+            // rtsAutor
             // 
-            this.funcionáriosToolStripMenuItem.Name = "funcionáriosToolStripMenuItem";
-            this.funcionáriosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.funcionáriosToolStripMenuItem.Text = "Autor";
+            this.rtsAutor.BackColor = System.Drawing.Color.Silver;
+            this.rtsAutor.Name = "rtsAutor";
+            this.rtsAutor.Size = new System.Drawing.Size(180, 22);
+            this.rtsAutor.Text = "Autor";
+            this.rtsAutor.Click += new System.EventHandler(this.rtsAutor_Click);
             // 
-            // cursosToolStripMenuItem
+            // TelaEditora
             // 
-            this.cursosToolStripMenuItem.Name = "cursosToolStripMenuItem";
-            this.cursosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.cursosToolStripMenuItem.Text = "Editora";
+            this.TelaEditora.BackColor = System.Drawing.Color.Silver;
+            this.TelaEditora.Name = "TelaEditora";
+            this.TelaEditora.Size = new System.Drawing.Size(180, 22);
+            this.TelaEditora.Text = "Editora";
+            this.TelaEditora.Click += new System.EventHandler(this.TelaEditora_Click);
             // 
             // professoresToolStripMenuItem
             // 
+            this.professoresToolStripMenuItem.BackColor = System.Drawing.Color.Silver;
             this.professoresToolStripMenuItem.Name = "professoresToolStripMenuItem";
             this.professoresToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.professoresToolStripMenuItem.Text = "Livro";
@@ -101,20 +109,23 @@ namespace Q_cursos
             // 
             // funcionáriosToolStripMenuItem1
             // 
+            this.funcionáriosToolStripMenuItem1.BackColor = System.Drawing.Color.Silver;
             this.funcionáriosToolStripMenuItem1.Name = "funcionáriosToolStripMenuItem1";
-            this.funcionáriosToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.funcionáriosToolStripMenuItem1.Size = new System.Drawing.Size(116, 22);
             this.funcionáriosToolStripMenuItem1.Text = "Autores";
             // 
             // cursosToolStripMenuItem1
             // 
+            this.cursosToolStripMenuItem1.BackColor = System.Drawing.Color.Silver;
             this.cursosToolStripMenuItem1.Name = "cursosToolStripMenuItem1";
-            this.cursosToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.cursosToolStripMenuItem1.Size = new System.Drawing.Size(116, 22);
             this.cursosToolStripMenuItem1.Text = "Editoras";
             // 
             // funcionáriosToolStripMenuItem2
             // 
+            this.funcionáriosToolStripMenuItem2.BackColor = System.Drawing.Color.Silver;
             this.funcionáriosToolStripMenuItem2.Name = "funcionáriosToolStripMenuItem2";
-            this.funcionáriosToolStripMenuItem2.Size = new System.Drawing.Size(180, 22);
+            this.funcionáriosToolStripMenuItem2.Size = new System.Drawing.Size(116, 22);
             this.funcionáriosToolStripMenuItem2.Text = "Livros";
             // 
             // sobreToolStripMenuItem
@@ -124,6 +135,13 @@ namespace Q_cursos
             this.sobreToolStripMenuItem.Name = "sobreToolStripMenuItem";
             this.sobreToolStripMenuItem.Size = new System.Drawing.Size(49, 20);
             this.sobreToolStripMenuItem.Text = "Sobre";
+            // 
+            // sistemaToolStripMenuItem
+            // 
+            this.sistemaToolStripMenuItem.BackColor = System.Drawing.Color.Silver;
+            this.sistemaToolStripMenuItem.Name = "sistemaToolStripMenuItem";
+            this.sistemaToolStripMenuItem.Size = new System.Drawing.Size(115, 22);
+            this.sistemaToolStripMenuItem.Text = "Sistema";
             // 
             // sairToolStripMenuItem
             // 
@@ -151,11 +169,16 @@ namespace Q_cursos
             this.toolStripStatusLabel1.Size = new System.Drawing.Size(146, 19);
             this.toolStripStatusLabel1.Text = "Bem Vindo ao Sistema";
             // 
-            // sistemaToolStripMenuItem
+            // pictureBox1
             // 
-            this.sistemaToolStripMenuItem.Name = "sistemaToolStripMenuItem";
-            this.sistemaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.sistemaToolStripMenuItem.Text = "Sistema";
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(0, 24);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(535, 213);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 3;
+            this.pictureBox1.TabStop = false;
             // 
             // Principal
             // 
@@ -163,8 +186,10 @@ namespace Q_cursos
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Silver;
             this.ClientSize = new System.Drawing.Size(535, 261);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.menuStrip1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Principal";
             this.Text = "Sistema de Cadastro";
@@ -174,6 +199,7 @@ namespace Q_cursos
             this.menuStrip1.PerformLayout();
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -183,8 +209,8 @@ namespace Q_cursos
 
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem cadastrosToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem funcionáriosToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem cursosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem rtsAutor;
+        private System.Windows.Forms.ToolStripMenuItem TelaEditora;
         private System.Windows.Forms.ToolStripMenuItem professoresToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem consultasToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem funcionáriosToolStripMenuItem1;
@@ -195,5 +221,6 @@ namespace Q_cursos
         private System.Windows.Forms.StatusStrip statusStrip1;
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
         private System.Windows.Forms.ToolStripMenuItem sistemaToolStripMenuItem;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

@@ -31,5 +31,17 @@ namespace Q_cursos
         {
             Application.Exit();
         }
+
+        private void rtsAutor_Click(object sender, EventArgs e)
+        {
+            Cadastro_de_Autor cadast = new Cadastro_de_Autor();
+            cadast.Show();
+        }
+
+        private void TelaEditora_Click(object sender, EventArgs e)
+        {
+            Cadastro_de_Editora cadEdi = new Cadastro_de_Editora();
+            cadEdi.Show();
+        }
     }
 }
