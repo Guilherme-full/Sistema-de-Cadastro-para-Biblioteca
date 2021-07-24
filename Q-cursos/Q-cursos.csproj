@@ -53,6 +53,12 @@
     <Compile Include="Cadastro de Autor.Designer.cs">
       <DependentUpon>Cadastro de Autor.cs</DependentUpon>
     </Compile>
+    <Compile Include="Cadastro de Editora.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastro de Editora.Designer.cs">
+      <DependentUpon>Cadastro de Editora.cs</DependentUpon>
+    </Compile>
     <Compile Include="Cadastro.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -81,6 +87,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Cadastro de Autor.resx">
       <DependentUpon>Cadastro de Autor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastro de Editora.resx">
+      <DependentUpon>Cadastro de Editora.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Cadastro.resx">
       <DependentUpon>Cadastro.cs</DependentUpon>

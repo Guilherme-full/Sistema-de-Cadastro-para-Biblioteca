@@ -33,7 +33,7 @@ namespace Q_cursos
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.cadastrosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.rtsAutor = new System.Windows.Forms.ToolStripMenuItem();
-            this.cursosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.TelaEditora = new System.Windows.Forms.ToolStripMenuItem();
             this.professoresToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.consultasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.funcionáriosToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
@@ -68,7 +68,7 @@ namespace Q_cursos
             // 
             this.cadastrosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.rtsAutor,
-            this.cursosToolStripMenuItem,
+            this.TelaEditora,
             this.professoresToolStripMenuItem});
             this.cadastrosToolStripMenuItem.Name = "cadastrosToolStripMenuItem";
             this.cadastrosToolStripMenuItem.Size = new System.Drawing.Size(71, 20);
@@ -82,12 +82,13 @@ namespace Q_cursos
             this.rtsAutor.Text = "Autor";
             this.rtsAutor.Click += new System.EventHandler(this.rtsAutor_Click);
             // 
-            // cursosToolStripMenuItem
+            // TelaEditora
             // 
-            this.cursosToolStripMenuItem.BackColor = System.Drawing.Color.Silver;
-            this.cursosToolStripMenuItem.Name = "cursosToolStripMenuItem";
-            this.cursosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.cursosToolStripMenuItem.Text = "Editora";
+            this.TelaEditora.BackColor = System.Drawing.Color.Silver;
+            this.TelaEditora.Name = "TelaEditora";
+            this.TelaEditora.Size = new System.Drawing.Size(180, 22);
+            this.TelaEditora.Text = "Editora";
+            this.TelaEditora.Click += new System.EventHandler(this.TelaEditora_Click);
             // 
             // professoresToolStripMenuItem
             // 
@@ -188,6 +189,7 @@ namespace Q_cursos
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.menuStrip1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Principal";
             this.Text = "Sistema de Cadastro";
@@ -208,7 +210,7 @@ namespace Q_cursos
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem cadastrosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem rtsAutor;
-        private System.Windows.Forms.ToolStripMenuItem cursosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem TelaEditora;
         private System.Windows.Forms.ToolStripMenuItem professoresToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem consultasToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem funcionáriosToolStripMenuItem1;
