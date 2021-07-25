@@ -43,5 +43,35 @@ namespace Q_cursos
             Cadastro_de_Editora cadEdi = new Cadastro_de_Editora();
             cadEdi.Show();
         }
+
+        private void menLivro_Click(object sender, EventArgs e)
+        {
+            Cadastro_do_Livro cadLivro = new Cadastro_do_Livro();
+            cadLivro.Show();
+        }
+
+        private void ftlAutores_Click(object sender, EventArgs e)
+        {
+            Consultar_Autores conAutor = new Consultar_Autores();
+            conAutor.Show();
+        }
+
+        private void ctsEditora_Click(object sender, EventArgs e)
+        {
+            Editoras_Cadastradas ediCad = new Editoras_Cadastradas();
+            ediCad.Show();
+        }
+
+        private void ftsLivro_Click(object sender, EventArgs e)
+        {
+            Livros_Cadastrados livCAD = new Livros_Cadastrados();
+            livCAD.Show();
+        }
+
+        private void gtsGeral_Click(object sender, EventArgs e)
+        {
+            Geral ger = new Geral();
+            ger.Show();
+        }
     }
 }

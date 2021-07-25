@@ -34,17 +34,18 @@ namespace Q_cursos
             this.cadastrosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.rtsAutor = new System.Windows.Forms.ToolStripMenuItem();
             this.TelaEditora = new System.Windows.Forms.ToolStripMenuItem();
-            this.professoresToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.menLivro = new System.Windows.Forms.ToolStripMenuItem();
             this.consultasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.funcionáriosToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.cursosToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.funcionáriosToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.ftlAutores = new System.Windows.Forms.ToolStripMenuItem();
+            this.ctsEditora = new System.Windows.Forms.ToolStripMenuItem();
+            this.ftsLivro = new System.Windows.Forms.ToolStripMenuItem();
             this.sobreToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.sistemaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.sairToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.gtsGeral = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -69,7 +70,8 @@ namespace Q_cursos
             this.cadastrosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.rtsAutor,
             this.TelaEditora,
-            this.professoresToolStripMenuItem});
+            this.menLivro});
+            this.cadastrosToolStripMenuItem.ForeColor = System.Drawing.Color.Black;
             this.cadastrosToolStripMenuItem.Name = "cadastrosToolStripMenuItem";
             this.cadastrosToolStripMenuItem.Size = new System.Drawing.Size(71, 20);
             this.cadastrosToolStripMenuItem.Text = "Cadastros";
@@ -78,7 +80,7 @@ namespace Q_cursos
             // 
             this.rtsAutor.BackColor = System.Drawing.Color.Silver;
             this.rtsAutor.Name = "rtsAutor";
-            this.rtsAutor.Size = new System.Drawing.Size(180, 22);
+            this.rtsAutor.Size = new System.Drawing.Size(111, 22);
             this.rtsAutor.Text = "Autor";
             this.rtsAutor.Click += new System.EventHandler(this.rtsAutor_Click);
             // 
@@ -86,47 +88,52 @@ namespace Q_cursos
             // 
             this.TelaEditora.BackColor = System.Drawing.Color.Silver;
             this.TelaEditora.Name = "TelaEditora";
-            this.TelaEditora.Size = new System.Drawing.Size(180, 22);
+            this.TelaEditora.Size = new System.Drawing.Size(111, 22);
             this.TelaEditora.Text = "Editora";
             this.TelaEditora.Click += new System.EventHandler(this.TelaEditora_Click);
             // 
-            // professoresToolStripMenuItem
+            // menLivro
             // 
-            this.professoresToolStripMenuItem.BackColor = System.Drawing.Color.Silver;
-            this.professoresToolStripMenuItem.Name = "professoresToolStripMenuItem";
-            this.professoresToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.professoresToolStripMenuItem.Text = "Livro";
+            this.menLivro.BackColor = System.Drawing.Color.Silver;
+            this.menLivro.Name = "menLivro";
+            this.menLivro.Size = new System.Drawing.Size(111, 22);
+            this.menLivro.Text = "Livro";
+            this.menLivro.Click += new System.EventHandler(this.menLivro_Click);
             // 
             // consultasToolStripMenuItem
             // 
             this.consultasToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.funcionáriosToolStripMenuItem1,
-            this.cursosToolStripMenuItem1,
-            this.funcionáriosToolStripMenuItem2});
+            this.ftlAutores,
+            this.ctsEditora,
+            this.ftsLivro,
+            this.gtsGeral});
             this.consultasToolStripMenuItem.Name = "consultasToolStripMenuItem";
             this.consultasToolStripMenuItem.Size = new System.Drawing.Size(71, 20);
             this.consultasToolStripMenuItem.Text = "Consultas";
             // 
-            // funcionáriosToolStripMenuItem1
+            // ftlAutores
             // 
-            this.funcionáriosToolStripMenuItem1.BackColor = System.Drawing.Color.Silver;
-            this.funcionáriosToolStripMenuItem1.Name = "funcionáriosToolStripMenuItem1";
-            this.funcionáriosToolStripMenuItem1.Size = new System.Drawing.Size(116, 22);
-            this.funcionáriosToolStripMenuItem1.Text = "Autores";
+            this.ftlAutores.BackColor = System.Drawing.Color.Silver;
+            this.ftlAutores.Name = "ftlAutores";
+            this.ftlAutores.Size = new System.Drawing.Size(180, 22);
+            this.ftlAutores.Text = "Autores";
+            this.ftlAutores.Click += new System.EventHandler(this.ftlAutores_Click);
             // 
-            // cursosToolStripMenuItem1
+            // ctsEditora
             // 
-            this.cursosToolStripMenuItem1.BackColor = System.Drawing.Color.Silver;
-            this.cursosToolStripMenuItem1.Name = "cursosToolStripMenuItem1";
-            this.cursosToolStripMenuItem1.Size = new System.Drawing.Size(116, 22);
-            this.cursosToolStripMenuItem1.Text = "Editoras";
+            this.ctsEditora.BackColor = System.Drawing.Color.Silver;
+            this.ctsEditora.Name = "ctsEditora";
+            this.ctsEditora.Size = new System.Drawing.Size(180, 22);
+            this.ctsEditora.Text = "Editoras";
+            this.ctsEditora.Click += new System.EventHandler(this.ctsEditora_Click);
             // 
-            // funcionáriosToolStripMenuItem2
+            // ftsLivro
             // 
-            this.funcionáriosToolStripMenuItem2.BackColor = System.Drawing.Color.Silver;
-            this.funcionáriosToolStripMenuItem2.Name = "funcionáriosToolStripMenuItem2";
-            this.funcionáriosToolStripMenuItem2.Size = new System.Drawing.Size(116, 22);
-            this.funcionáriosToolStripMenuItem2.Text = "Livros";
+            this.ftsLivro.BackColor = System.Drawing.Color.Silver;
+            this.ftsLivro.Name = "ftsLivro";
+            this.ftsLivro.Size = new System.Drawing.Size(180, 22);
+            this.ftsLivro.Text = "Livros";
+            this.ftsLivro.Click += new System.EventHandler(this.ftsLivro_Click);
             // 
             // sobreToolStripMenuItem
             // 
@@ -164,7 +171,9 @@ namespace Q_cursos
             // 
             // toolStripStatusLabel1
             // 
+            this.toolStripStatusLabel1.BackColor = System.Drawing.Color.Transparent;
             this.toolStripStatusLabel1.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.toolStripStatusLabel1.ForeColor = System.Drawing.Color.Red;
             this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
             this.toolStripStatusLabel1.Size = new System.Drawing.Size(146, 19);
             this.toolStripStatusLabel1.Text = "Bem Vindo ao Sistema";
@@ -179,6 +188,14 @@ namespace Q_cursos
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 3;
             this.pictureBox1.TabStop = false;
+            // 
+            // gtsGeral
+            // 
+            this.gtsGeral.BackColor = System.Drawing.Color.Silver;
+            this.gtsGeral.Name = "gtsGeral";
+            this.gtsGeral.Size = new System.Drawing.Size(180, 22);
+            this.gtsGeral.Text = "Geral";
+            this.gtsGeral.Click += new System.EventHandler(this.gtsGeral_Click);
             // 
             // Principal
             // 
@@ -211,16 +228,17 @@ namespace Q_cursos
         private System.Windows.Forms.ToolStripMenuItem cadastrosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem rtsAutor;
         private System.Windows.Forms.ToolStripMenuItem TelaEditora;
-        private System.Windows.Forms.ToolStripMenuItem professoresToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem menLivro;
         private System.Windows.Forms.ToolStripMenuItem consultasToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem funcionáriosToolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem cursosToolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem funcionáriosToolStripMenuItem2;
+        private System.Windows.Forms.ToolStripMenuItem ftlAutores;
+        private System.Windows.Forms.ToolStripMenuItem ctsEditora;
+        private System.Windows.Forms.ToolStripMenuItem ftsLivro;
         private System.Windows.Forms.ToolStripMenuItem sobreToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem sairToolStripMenuItem;
         private System.Windows.Forms.StatusStrip statusStrip1;
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
         private System.Windows.Forms.ToolStripMenuItem sistemaToolStripMenuItem;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.ToolStripMenuItem gtsGeral;
     }
 }

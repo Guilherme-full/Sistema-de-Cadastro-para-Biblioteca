@@ -59,17 +59,47 @@
     <Compile Include="Cadastro de Editora.Designer.cs">
       <DependentUpon>Cadastro de Editora.cs</DependentUpon>
     </Compile>
+    <Compile Include="Cadastro do Livro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastro do Livro.Designer.cs">
+      <DependentUpon>Cadastro do Livro.cs</DependentUpon>
+    </Compile>
     <Compile Include="Cadastro.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Cadastro.Designer.cs">
       <DependentUpon>Cadastro.cs</DependentUpon>
     </Compile>
+    <Compile Include="Consultar Autores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consultar Autores.Designer.cs">
+      <DependentUpon>Consultar Autores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Editoras Cadastradas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Editoras Cadastradas.Designer.cs">
+      <DependentUpon>Editoras Cadastradas.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Geral.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Geral.Designer.cs">
+      <DependentUpon>Geral.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Livros Cadastrados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Livros Cadastrados.Designer.cs">
+      <DependentUpon>Livros Cadastrados.cs</DependentUpon>
     </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
@@ -91,11 +121,26 @@
     <EmbeddedResource Include="Cadastro de Editora.resx">
       <DependentUpon>Cadastro de Editora.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Cadastro do Livro.resx">
+      <DependentUpon>Cadastro do Livro.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Cadastro.resx">
       <DependentUpon>Cadastro.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Consultar Autores.resx">
+      <DependentUpon>Consultar Autores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Editoras Cadastradas.resx">
+      <DependentUpon>Editoras Cadastradas.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Geral.resx">
+      <DependentUpon>Geral.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Livros Cadastrados.resx">
+      <DependentUpon>Livros Cadastrados.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
