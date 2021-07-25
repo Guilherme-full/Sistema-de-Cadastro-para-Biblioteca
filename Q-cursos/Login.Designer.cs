@@ -71,7 +71,7 @@ namespace Q_cursos
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(45, 20);
             this.label2.TabIndex = 2;
-            this.label2.Text = "Login";
+            this.label2.Text = "Email";
             // 
             // label3
             // 
@@ -105,7 +105,7 @@ namespace Q_cursos
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(400, 257);
+            this.button1.Location = new System.Drawing.Point(562, 257);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(82, 31);
             this.button1.TabIndex = 6;
