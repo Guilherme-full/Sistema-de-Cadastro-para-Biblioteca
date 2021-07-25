@@ -39,13 +39,13 @@ namespace Q_cursos
             this.ftlAutores = new System.Windows.Forms.ToolStripMenuItem();
             this.ctsEditora = new System.Windows.Forms.ToolStripMenuItem();
             this.ftsLivro = new System.Windows.Forms.ToolStripMenuItem();
+            this.gtsGeral = new System.Windows.Forms.ToolStripMenuItem();
             this.sobreToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.sistemaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.stsSistema = new System.Windows.Forms.ToolStripMenuItem();
             this.sairToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.gtsGeral = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -80,7 +80,7 @@ namespace Q_cursos
             // 
             this.rtsAutor.BackColor = System.Drawing.Color.Silver;
             this.rtsAutor.Name = "rtsAutor";
-            this.rtsAutor.Size = new System.Drawing.Size(111, 22);
+            this.rtsAutor.Size = new System.Drawing.Size(180, 22);
             this.rtsAutor.Text = "Autor";
             this.rtsAutor.Click += new System.EventHandler(this.rtsAutor_Click);
             // 
@@ -88,7 +88,7 @@ namespace Q_cursos
             // 
             this.TelaEditora.BackColor = System.Drawing.Color.Silver;
             this.TelaEditora.Name = "TelaEditora";
-            this.TelaEditora.Size = new System.Drawing.Size(111, 22);
+            this.TelaEditora.Size = new System.Drawing.Size(180, 22);
             this.TelaEditora.Text = "Editora";
             this.TelaEditora.Click += new System.EventHandler(this.TelaEditora_Click);
             // 
@@ -96,7 +96,7 @@ namespace Q_cursos
             // 
             this.menLivro.BackColor = System.Drawing.Color.Silver;
             this.menLivro.Name = "menLivro";
-            this.menLivro.Size = new System.Drawing.Size(111, 22);
+            this.menLivro.Size = new System.Drawing.Size(180, 22);
             this.menLivro.Text = "Livro";
             this.menLivro.Click += new System.EventHandler(this.menLivro_Click);
             // 
@@ -135,20 +135,29 @@ namespace Q_cursos
             this.ftsLivro.Text = "Livros";
             this.ftsLivro.Click += new System.EventHandler(this.ftsLivro_Click);
             // 
+            // gtsGeral
+            // 
+            this.gtsGeral.BackColor = System.Drawing.Color.Silver;
+            this.gtsGeral.Name = "gtsGeral";
+            this.gtsGeral.Size = new System.Drawing.Size(180, 22);
+            this.gtsGeral.Text = "Geral";
+            this.gtsGeral.Click += new System.EventHandler(this.gtsGeral_Click);
+            // 
             // sobreToolStripMenuItem
             // 
             this.sobreToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.sistemaToolStripMenuItem});
+            this.stsSistema});
             this.sobreToolStripMenuItem.Name = "sobreToolStripMenuItem";
             this.sobreToolStripMenuItem.Size = new System.Drawing.Size(49, 20);
             this.sobreToolStripMenuItem.Text = "Sobre";
             // 
-            // sistemaToolStripMenuItem
+            // stsSistema
             // 
-            this.sistemaToolStripMenuItem.BackColor = System.Drawing.Color.Silver;
-            this.sistemaToolStripMenuItem.Name = "sistemaToolStripMenuItem";
-            this.sistemaToolStripMenuItem.Size = new System.Drawing.Size(115, 22);
-            this.sistemaToolStripMenuItem.Text = "Sistema";
+            this.stsSistema.BackColor = System.Drawing.Color.Silver;
+            this.stsSistema.Name = "stsSistema";
+            this.stsSistema.Size = new System.Drawing.Size(180, 22);
+            this.stsSistema.Text = "Sistema";
+            this.stsSistema.Click += new System.EventHandler(this.stsSistema_Click);
             // 
             // sairToolStripMenuItem
             // 
@@ -188,14 +197,6 @@ namespace Q_cursos
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 3;
             this.pictureBox1.TabStop = false;
-            // 
-            // gtsGeral
-            // 
-            this.gtsGeral.BackColor = System.Drawing.Color.Silver;
-            this.gtsGeral.Name = "gtsGeral";
-            this.gtsGeral.Size = new System.Drawing.Size(180, 22);
-            this.gtsGeral.Text = "Geral";
-            this.gtsGeral.Click += new System.EventHandler(this.gtsGeral_Click);
             // 
             // Principal
             // 
@@ -237,7 +238,7 @@ namespace Q_cursos
         private System.Windows.Forms.ToolStripMenuItem sairToolStripMenuItem;
         private System.Windows.Forms.StatusStrip statusStrip1;
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
-        private System.Windows.Forms.ToolStripMenuItem sistemaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem stsSistema;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.ToolStripMenuItem gtsGeral;
     }
