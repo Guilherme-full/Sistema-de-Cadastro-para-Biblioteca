@@ -53,10 +53,10 @@ namespace Q_cursos
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Algerian", 15F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(270, 21);
+            this.label1.Font = new System.Drawing.Font("Arial", 15F, System.Drawing.FontStyle.Italic);
+            this.label1.Location = new System.Drawing.Point(280, 24);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(112, 22);
+            this.label1.Size = new System.Drawing.Size(90, 24);
             this.label1.TabIndex = 0;
             this.label1.Text = "Cadastro";
             // 

@@ -73,5 +73,11 @@ namespace Q_cursos
             Geral ger = new Geral();
             ger.Show();
         }
+
+        private void stsSistema_Click(object sender, EventArgs e)
+        {
+            Sistema sis = new Sistema();
+            sis.Show();
+        }
     }
 }
