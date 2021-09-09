@@ -44,6 +44,7 @@ namespace Q_cursos
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.btnLimpar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pbEditora)).BeginInit();
             this.plEditora.SuspendLayout();
             this.SuspendLayout();
@@ -71,6 +72,7 @@ namespace Q_cursos
             // 
             // plEditora
             // 
+            this.plEditora.Controls.Add(this.btnLimpar);
             this.plEditora.Controls.Add(this.btnCadastroLivro);
             this.plEditora.Controls.Add(this.textIDdaEditora);
             this.plEditora.Controls.Add(this.textIDdoAutor);
@@ -195,6 +197,18 @@ namespace Q_cursos
             this.label2.TabIndex = 0;
             this.label2.Text = "Nome do Livro";
             // 
+            // btnLimpar
+            // 
+            this.btnLimpar.BackColor = System.Drawing.Color.Silver;
+            this.btnLimpar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLimpar.Location = new System.Drawing.Point(57, 357);
+            this.btnLimpar.Name = "btnLimpar";
+            this.btnLimpar.Size = new System.Drawing.Size(149, 34);
+            this.btnLimpar.TabIndex = 11;
+            this.btnLimpar.Text = "Limpar";
+            this.btnLimpar.UseVisualStyleBackColor = false;
+            this.btnLimpar.Click += new System.EventHandler(this.btnLimpar_Click);
+            // 
             // Cadastro_do_Livro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -232,5 +246,6 @@ namespace Q_cursos
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btnCadastroLivro;
+        private System.Windows.Forms.Button btnLimpar;
     }
 }

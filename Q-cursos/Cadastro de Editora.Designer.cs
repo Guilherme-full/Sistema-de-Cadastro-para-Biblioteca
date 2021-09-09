@@ -42,6 +42,7 @@ namespace Q_cursos
             this.textEmailEditora = new System.Windows.Forms.TextBox();
             this.pnlEditora = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
+            this.btnLimpar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pbEditora)).BeginInit();
             this.pnlEditora.SuspendLayout();
             this.SuspendLayout();
@@ -146,6 +147,7 @@ namespace Q_cursos
             // 
             // pnlEditora
             // 
+            this.pnlEditora.Controls.Add(this.btnLimpar);
             this.pnlEditora.Controls.Add(this.button1);
             this.pnlEditora.Controls.Add(this.textEmailEditora);
             this.pnlEditora.Controls.Add(this.textNúmero);
@@ -172,6 +174,18 @@ namespace Q_cursos
             this.button1.Text = "Cadastrar";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // btnLimpar
+            // 
+            this.btnLimpar.BackColor = System.Drawing.Color.Silver;
+            this.btnLimpar.Font = new System.Drawing.Font("Arial", 13F);
+            this.btnLimpar.Location = new System.Drawing.Point(115, 292);
+            this.btnLimpar.Name = "btnLimpar";
+            this.btnLimpar.Size = new System.Drawing.Size(137, 39);
+            this.btnLimpar.TabIndex = 11;
+            this.btnLimpar.Text = "Limpar";
+            this.btnLimpar.UseVisualStyleBackColor = false;
+            this.btnLimpar.Click += new System.EventHandler(this.btnLimpar_Click);
             // 
             // Cadastro_de_Editora
             // 
@@ -209,5 +223,6 @@ namespace Q_cursos
         private System.Windows.Forms.TextBox textEmailEditora;
         private System.Windows.Forms.Panel pnlEditora;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnLimpar;
     }
 }

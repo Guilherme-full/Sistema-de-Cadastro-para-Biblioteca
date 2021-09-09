@@ -47,6 +47,7 @@ namespace Q_cursos
             this.btnTelaDeLogin = new System.Windows.Forms.Button();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.sairToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.btnLimpar = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -196,7 +197,7 @@ namespace Q_cursos
             // 
             this.btnTelaDeLogin.BackColor = System.Drawing.Color.Silver;
             this.btnTelaDeLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTelaDeLogin.Location = new System.Drawing.Point(116, 449);
+            this.btnTelaDeLogin.Location = new System.Drawing.Point(99, 449);
             this.btnTelaDeLogin.Name = "btnTelaDeLogin";
             this.btnTelaDeLogin.Size = new System.Drawing.Size(124, 44);
             this.btnTelaDeLogin.TabIndex = 18;
@@ -222,12 +223,25 @@ namespace Q_cursos
             this.sairToolStripMenuItem.Text = "Sair";
             this.sairToolStripMenuItem.Click += new System.EventHandler(this.sairToolStripMenuItem_Click);
             // 
+            // btnLimpar
+            // 
+            this.btnLimpar.BackColor = System.Drawing.Color.Silver;
+            this.btnLimpar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLimpar.Location = new System.Drawing.Point(296, 449);
+            this.btnLimpar.Name = "btnLimpar";
+            this.btnLimpar.Size = new System.Drawing.Size(124, 44);
+            this.btnLimpar.TabIndex = 20;
+            this.btnLimpar.Text = "Limpar";
+            this.btnLimpar.UseVisualStyleBackColor = false;
+            this.btnLimpar.Click += new System.EventHandler(this.btnLimpar_Click);
+            // 
             // Cadastro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Silver;
             this.ClientSize = new System.Drawing.Size(646, 547);
+            this.Controls.Add(this.btnLimpar);
             this.Controls.Add(this.btnTelaDeLogin);
             this.Controls.Add(this.btnCadastrar);
             this.Controls.Add(this.label1);
@@ -277,5 +291,6 @@ namespace Q_cursos
         private System.Windows.Forms.Button btnTelaDeLogin;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem sairToolStripMenuItem;
+        private System.Windows.Forms.Button btnLimpar;
     }
 }

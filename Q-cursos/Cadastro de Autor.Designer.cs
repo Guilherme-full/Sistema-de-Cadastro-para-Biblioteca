@@ -33,15 +33,16 @@ namespace Q_cursos
             this.label1 = new System.Windows.Forms.Label();
             this.pbAdicionar = new System.Windows.Forms.PictureBox();
             this.pnCad = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.textNomeCompletoAutor = new System.Windows.Forms.TextBox();
-            this.textCidadeAutor = new System.Windows.Forms.TextBox();
-            this.textEmailAutor = new System.Windows.Forms.TextBox();
-            this.textEstadoAutor = new System.Windows.Forms.TextBox();
             this.btnCadastroAutor = new System.Windows.Forms.Button();
+            this.textEstadoAutor = new System.Windows.Forms.TextBox();
+            this.textEmailAutor = new System.Windows.Forms.TextBox();
+            this.textCidadeAutor = new System.Windows.Forms.TextBox();
+            this.textNomeCompletoAutor = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.btnLimpar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pbAdicionar)).BeginInit();
             this.pnCad.SuspendLayout();
             this.SuspendLayout();
@@ -70,6 +71,7 @@ namespace Q_cursos
             // 
             // pnCad
             // 
+            this.pnCad.Controls.Add(this.btnLimpar);
             this.pnCad.Controls.Add(this.btnCadastroAutor);
             this.pnCad.Controls.Add(this.textEstadoAutor);
             this.pnCad.Controls.Add(this.textEmailAutor);
@@ -85,36 +87,57 @@ namespace Q_cursos
             this.pnCad.Size = new System.Drawing.Size(776, 384);
             this.pnCad.TabIndex = 2;
             // 
-            // label2
+            // btnCadastroAutor
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(22, 26);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(138, 22);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "Nome Completo";
+            this.btnCadastroAutor.BackColor = System.Drawing.Color.Silver;
+            this.btnCadastroAutor.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCadastroAutor.Location = new System.Drawing.Point(612, 320);
+            this.btnCadastroAutor.Name = "btnCadastroAutor";
+            this.btnCadastroAutor.Size = new System.Drawing.Size(119, 35);
+            this.btnCadastroAutor.TabIndex = 10;
+            this.btnCadastroAutor.Text = "Cadastrar";
+            this.btnCadastroAutor.UseVisualStyleBackColor = false;
+            this.btnCadastroAutor.Click += new System.EventHandler(this.btnCadastroAutor_Click);
             // 
-            // label5
+            // textEstadoAutor
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(94, 103);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(66, 22);
-            this.label5.TabIndex = 3;
-            this.label5.Text = "Estado";
+            this.textEstadoAutor.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textEstadoAutor.Font = new System.Drawing.Font("Arial", 13F);
+            this.textEstadoAutor.Location = new System.Drawing.Point(161, 100);
+            this.textEstadoAutor.Multiline = true;
+            this.textEstadoAutor.Name = "textEstadoAutor";
+            this.textEstadoAutor.Size = new System.Drawing.Size(572, 26);
+            this.textEstadoAutor.TabIndex = 9;
             // 
-            // label3
+            // textEmailAutor
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.label3.Location = new System.Drawing.Point(92, 169);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(67, 22);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "Cidade";
+            this.textEmailAutor.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textEmailAutor.Font = new System.Drawing.Font("Arial", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textEmailAutor.Location = new System.Drawing.Point(159, 242);
+            this.textEmailAutor.Multiline = true;
+            this.textEmailAutor.Name = "textEmailAutor";
+            this.textEmailAutor.Size = new System.Drawing.Size(572, 26);
+            this.textEmailAutor.TabIndex = 8;
+            // 
+            // textCidadeAutor
+            // 
+            this.textCidadeAutor.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textCidadeAutor.Font = new System.Drawing.Font("Arial", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textCidadeAutor.Location = new System.Drawing.Point(160, 168);
+            this.textCidadeAutor.Multiline = true;
+            this.textCidadeAutor.Name = "textCidadeAutor";
+            this.textCidadeAutor.Size = new System.Drawing.Size(572, 25);
+            this.textCidadeAutor.TabIndex = 7;
+            // 
+            // textNomeCompletoAutor
+            // 
+            this.textNomeCompletoAutor.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textNomeCompletoAutor.Font = new System.Drawing.Font("Arial", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textNomeCompletoAutor.Location = new System.Drawing.Point(161, 25);
+            this.textNomeCompletoAutor.Multiline = true;
+            this.textNomeCompletoAutor.Name = "textNomeCompletoAutor";
+            this.textNomeCompletoAutor.Size = new System.Drawing.Size(572, 24);
+            this.textNomeCompletoAutor.TabIndex = 6;
             // 
             // label4
             // 
@@ -127,57 +150,48 @@ namespace Q_cursos
             this.label4.TabIndex = 5;
             this.label4.Text = "Email";
             // 
-            // textNomeCompletoAutor
+            // label3
             // 
-            this.textNomeCompletoAutor.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textNomeCompletoAutor.Font = new System.Drawing.Font("Arial", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textNomeCompletoAutor.Location = new System.Drawing.Point(161, 25);
-            this.textNomeCompletoAutor.Multiline = true;
-            this.textNomeCompletoAutor.Name = "textNomeCompletoAutor";
-            this.textNomeCompletoAutor.Size = new System.Drawing.Size(572, 24);
-            this.textNomeCompletoAutor.TabIndex = 6;
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.label3.Location = new System.Drawing.Point(92, 169);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(67, 22);
+            this.label3.TabIndex = 4;
+            this.label3.Text = "Cidade";
             // 
-            // textCidadeAutor
+            // label5
             // 
-            this.textCidadeAutor.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textCidadeAutor.Font = new System.Drawing.Font("Arial", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textCidadeAutor.Location = new System.Drawing.Point(160, 168);
-            this.textCidadeAutor.Multiline = true;
-            this.textCidadeAutor.Name = "textCidadeAutor";
-            this.textCidadeAutor.Size = new System.Drawing.Size(572, 25);
-            this.textCidadeAutor.TabIndex = 7;
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(94, 103);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(66, 22);
+            this.label5.TabIndex = 3;
+            this.label5.Text = "Estado";
             // 
-            // textEmailAutor
+            // label2
             // 
-            this.textEmailAutor.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textEmailAutor.Font = new System.Drawing.Font("Arial", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textEmailAutor.Location = new System.Drawing.Point(159, 242);
-            this.textEmailAutor.Multiline = true;
-            this.textEmailAutor.Name = "textEmailAutor";
-            this.textEmailAutor.Size = new System.Drawing.Size(572, 26);
-            this.textEmailAutor.TabIndex = 8;
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(22, 26);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(138, 22);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "Nome Completo";
             // 
-            // textEstadoAutor
+            // btnLimpar
             // 
-            this.textEstadoAutor.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textEstadoAutor.Font = new System.Drawing.Font("Arial", 13F);
-            this.textEstadoAutor.Location = new System.Drawing.Point(161, 100);
-            this.textEstadoAutor.Multiline = true;
-            this.textEstadoAutor.Name = "textEstadoAutor";
-            this.textEstadoAutor.Size = new System.Drawing.Size(572, 26);
-            this.textEstadoAutor.TabIndex = 9;
-            // 
-            // btnCadastroAutor
-            // 
-            this.btnCadastroAutor.BackColor = System.Drawing.Color.Silver;
-            this.btnCadastroAutor.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCadastroAutor.Location = new System.Drawing.Point(612, 320);
-            this.btnCadastroAutor.Name = "btnCadastroAutor";
-            this.btnCadastroAutor.Size = new System.Drawing.Size(119, 35);
-            this.btnCadastroAutor.TabIndex = 10;
-            this.btnCadastroAutor.Text = "Cadastrar";
-            this.btnCadastroAutor.UseVisualStyleBackColor = false;
-            this.btnCadastroAutor.Click += new System.EventHandler(this.btnCadastroAutor_Click);
+            this.btnLimpar.BackColor = System.Drawing.Color.Silver;
+            this.btnLimpar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLimpar.Location = new System.Drawing.Point(118, 320);
+            this.btnLimpar.Name = "btnLimpar";
+            this.btnLimpar.Size = new System.Drawing.Size(119, 35);
+            this.btnLimpar.TabIndex = 11;
+            this.btnLimpar.Text = "Limpar";
+            this.btnLimpar.UseVisualStyleBackColor = false;
+            this.btnLimpar.Click += new System.EventHandler(this.btnLimpar_Click);
             // 
             // Cadastro_de_Autor
             // 
@@ -214,5 +228,6 @@ namespace Q_cursos
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btnCadastroAutor;
+        private System.Windows.Forms.Button btnLimpar;
     }
 }
