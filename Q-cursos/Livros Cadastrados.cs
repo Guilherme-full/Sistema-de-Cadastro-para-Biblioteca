@@ -36,7 +36,7 @@ namespace Q_cursos
         {
             try
             {
-                conexao = new MySqlConnection("Server=192.168.15.5;Database=Biblioteca;Uid=Cadastros;Pwd=cadastrosSistema2021");
+                conexao = new MySqlConnection("Server=127.0.0.1;Database=Biblioteca;Uid=Cadastros;Pwd=cadastrosSistema2021");
                 strSQL = "Select * from livro";
                 da = new MySqlDataAdapter(strSQL, conexao);
                 DataTable dt = new DataTable();

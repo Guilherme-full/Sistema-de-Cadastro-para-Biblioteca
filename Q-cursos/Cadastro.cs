@@ -29,7 +29,7 @@ namespace Q_cursos
         {
             try
             {
-                conexao = new MySqlConnection("Server=192.168.15.5;Database=Cadastro;Uid=CadastroUsuario;Pwd=usuario2021");
+                conexao = new MySqlConnection("Server=127.0.0.1;Database=Cadastro;Uid=CadastroUsuario;Pwd=usuario2021");
                 strSQL = "insert into cadastro(nome, sobrenome, email, cidade, estado, senha) values (@nome, @sobrenome, @email, @cidade, @estado, @senha)";
                 comando = new MySqlCommand(strSQL, conexao);
                 comando.Parameters.AddWithValue("@nome", textNome.Text);
@@ -67,6 +67,17 @@ namespace Q_cursos
         private void sairToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void btnLimpar_Click(object sender, EventArgs e)
+        {
+            textNome.Text = "";
+            textSobrenome.Text = "";
+            textEmail.Text = "";
+            textCidade.Text = "";
+            textEstado.Text = "";
+            textSenha.Text = "";
+            textNome.Focus();
         }
     }
 }

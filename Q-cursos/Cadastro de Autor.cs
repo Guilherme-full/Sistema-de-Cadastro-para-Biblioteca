@@ -30,7 +30,7 @@ namespace Q_cursos
         {
             try
             {
-                conexao = new MySqlConnection("Server=192.168.15.5;Database=Biblioteca;Uid=Cadastros;Pwd=cadastrosSistema2021");
+                conexao = new MySqlConnection("Server=127.0.0.1;Database=Biblioteca;Uid=Cadastros;Pwd=cadastrosSistema2021");
                 strSQL = "insert into autor(nome_completo, estado, cidade, email) values (@nome_completo, @estado, @cidade, @email)";
                 comando = new MySqlCommand(strSQL, conexao);
                 comando.Parameters.AddWithValue("@nome_completo", textNomeCompletoAutor.Text);
@@ -51,6 +51,15 @@ namespace Q_cursos
                 conexao = null;
                 comando = null;
             }
+        }
+
+        private void btnLimpar_Click(object sender, EventArgs e)
+        {
+            textNomeCompletoAutor.Text = "";
+            textEstadoAutor.Text = "";
+            textCidadeAutor.Text = "";
+            textEmailAutor.Text = "";
+            textNomeCompletoAutor.Focus();
         }
     }
 }

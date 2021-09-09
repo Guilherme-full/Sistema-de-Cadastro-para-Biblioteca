@@ -31,7 +31,7 @@ namespace Q_cursos
         {
             try
             {
-                conexao = new MySqlConnection("Server=192.168.15.5;Database=Biblioteca;Uid=Cadastros;Pwd=cadastrosSistema2021");
+                conexao = new MySqlConnection("Server=127.0.0.1;Database=Biblioteca;Uid=Cadastros;Pwd=cadastrosSistema2021");
                 strSQL = " Select pp.nome_livro as Livro, pc.nome_completo as Autor, po.nome_editora as Editora from livro pp inner join autor pc on pp.id_autor = pc.id_autor inner join editora po on pp.id_editora = po.id_editora";
                 da = new MySqlDataAdapter(strSQL, conexao);
                 DataTable dt = new DataTable();

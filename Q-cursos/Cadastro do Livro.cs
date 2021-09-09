@@ -29,7 +29,7 @@ namespace Q_cursos
         {
             try
             {
-                conexao = new MySqlConnection("Server=192.168.15.5;Database=Biblioteca;Uid=Cadastros;Pwd=cadastrosSistema2021");
+                conexao = new MySqlConnection("Server=127.0.0.1;Database=Biblioteca;Uid=Cadastros;Pwd=cadastrosSistema2021");
                 strSQL = "insert into livro(nome_livro, isbn, preco, id_autor, id_editora) values (@nome_livro, @isbn, @preco, @id_autor, @id_editora)";
                 comando = new MySqlCommand(strSQL, conexao);
                 comando.Parameters.AddWithValue("@nome_livro", textNomeDoLivro.Text);
@@ -52,6 +52,16 @@ namespace Q_cursos
                 comando = null;
             }
 
+        }
+
+        private void btnLimpar_Click(object sender, EventArgs e)
+        {
+            textNomeDoLivro.Text = "";
+            textISBN.Text = "";
+            textPreco.Text = "";
+            textIDdoAutor.Text = "";
+            textIDdaEditora.Text = "";
+            textNomeDoLivro.Focus();
         }
     }
 }
